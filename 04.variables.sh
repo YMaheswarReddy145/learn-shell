@@ -32,7 +32,12 @@ echo -e "${color} $text Sai Vikas Reddy \e[0m"
 
 # Now i have given the color as Red(31) now i want to change it to Green(32) now directly i can change here color="\e[32m"
   # now it will change in ll the places where i have declare the variable color.
-
+text="Name :"
+color="\e[32m"
+echo -e "${color} $text Maheswar Reddy \e[0m"
+echo -e "${color} $text Malleshwar Reddy \e[0m"
+echo -e "${color} $text Sai Vikas Reddy \e[0m"
+echo -e "${color} $text Subhash Reddy \e[0m"
 
 
 
