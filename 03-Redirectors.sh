@@ -5,14 +5,15 @@
     #        SYSTEM(server)    <--------->   FILE
     # The output going from the system  to file is with >(greater) then symbol
     # The input coming from the file to the system is with <(less) then symbol
+
+
+mysql -uroot  -pExpanseApp@1
 # For Example in sql data base if you provide the input to show databases; it will show the data bases there itself
    # Here show databases: is input but we are giving through keyboard and the data bases we are getting are the output
-
 SHOW DATABASES;
 
 # Now we replace these by file, now create a file  by giving vim <filename> i am taking the file name as sample and
   # provide the input as show databases; in that file and save it
-
 cp Redirectors.conf /etc/yum.conf/Redirectors.conf
 
 # now give cat <filename> cat sample  it will show the content present in the sample file
