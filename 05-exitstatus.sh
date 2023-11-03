@@ -14,4 +14,3 @@ echo $?
 # when we want ot stop the script we can use exit command.
 # exit command is returning a status 0 by default.
 exit
-
