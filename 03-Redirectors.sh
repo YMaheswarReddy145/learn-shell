@@ -8,22 +8,26 @@
 
 
 #mysql -uroot  -pExpenseApp@1
+
 # For Example in sql data base if you provide the input to show databases; it will show the data bases there itself
    # Here show databases: is input but we are giving through keyboard and the data bases we are getting are the output
-#SHOW DATABASES;
+# SHOW DATABASES;
 
 # Now we replace these by file, now create a file  by giving vim <filename> i am taking the file name as sample and
-  # provide the input as show databases; in that file and save it
-#cp Redirectors.conf /etc/yum.conf/Redirectors.conf
+  # provide the input as show databases; in that file and save it.
+# >sample      -  created a file
+# vim sample   -  now provide the SHOW DATABASES; in the file and save it
+
 
 # now give cat <filename> cat sample  it will show the content present in the sample file
-#cat Redirectors.conf
+# cat sample
 
 # Now give the mysql -uroot  -pExpenseApp@1 <sample  and hit enter it will give the output if incase if you want it in
   # a table  format give mysql -t -uroot -pExpenseApp@1 <sample
       # here ExpenseApp@1 is the password we have provided for the sql data base
       # < lessthen symbol is the indicator of input
       # sample is the file we are giving as input
+
 # if you want redirect the output in to a particular file give mysql -t -uroot -pExpenseApp@1 <sample >out
   # now the output will store in the out file to view the output you can give cat out
 
