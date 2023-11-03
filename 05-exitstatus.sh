@@ -15,4 +15,10 @@ echo $?
 # exit command is returning a status 0 by default.
 ls
 exit
+echo $?
+
+# now we here we hve given ls and asked to exit so its come out now we try by giving exit first and then ls
+exit
+echo $?
+ls
 
