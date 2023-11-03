@@ -10,15 +10,3 @@ echo $?
 # suppose if the give invalid data (i..e, file name) then it show  the exit status code from 1 -255
 lss     # it gives lss: command not found because there is no command related to lss
 echo $?
-
-# when we want ot stop the script we can use exit command.
-# exit command is returning a status 0 by default.
-ls
-exit
-echo $?
-
-# now we here we hve given ls and asked to exit so its come out now we try by giving exit first and then ls
-exit
-echo $?
-ls
-
