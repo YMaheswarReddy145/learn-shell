@@ -8,9 +8,10 @@ ls
 echo $?
 
 # suppose if the give invalid data (i..e, file name) then it show  the exit status code from 1 -255
-lss
+lss     # it gives lss: command not found because there is no command related to lss
 echo $?
 
 # when we want ot stop the script we can use exit command.
 # exit command is returning a status 0 by default.
 exit
+ls
