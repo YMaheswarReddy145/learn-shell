@@ -22,11 +22,15 @@ print_hello   # we are calling the function print_hello it will print the Hello 
   #     # $1-$n - Arguments
   #     # $* -for all values
   #     # $# -for no of arguments
-
 sample()
 {
+  echo Function 1st Argument - $1
+  echo Function 2nd Argument - $2
   echo Function no of Arguments - $#
   echo Function Input - $*
+
 }
 
 sample Maheswar Reddy
+
+# In functions we use return command to return from the function and send the exit status of the function.
