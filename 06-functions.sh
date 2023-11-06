@@ -19,15 +19,15 @@ print_hello   # we are calling the function print_hello it will print the Hello 
    # that commands are used. for example purpose you cn check backend.sh file in expense-shell repo
 
 # There are some special variables ranges for inputs
-  #     # $1-$n - Arguments
-  #     # $* -for all values
-  #     # $# -for no of arguments
+        # $1-$n - Arguments
+        # $* -for all values
+        # $# -for no of arguments
 sample()
 {
-  echo Function 1st Argument - $1
-  echo Function 2nd Argument - $2
-  echo Function no of Arguments - $#
-  echo Function Input - $*
+  echo Function 1st Argument - $1           # it prints Maheswar
+  echo Function 2nd Argument - $2           # it prints Reddy
+  echo Function no of Arguments - $#        # it prints 2
+  echo Function Input - $*                  # It prints Maheswar Reddy
 
 }
 
