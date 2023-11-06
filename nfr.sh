@@ -17,9 +17,9 @@
 
   # We can achieve point using the special variables. some special variables help us to store and to load the input.
   # There re some special variables ranges for inputs
-     # $0 - $n - Arguments
-     # $* - for all values
-     # $# - for no of arguments
+     # $0-$n - Arguments
+     # $* -for all values
+     # $# -for no of arguments
 
   # when ever we have some special characters other then alphabets and numbers in our input then we need to use
     # single codes or double codes.
@@ -36,7 +36,7 @@ echo *    # it need to print * but it is printing all the files that are present
   # some slight differences. the main difference between single and double codes is if any of the variable is there while
   # printing the message the double code will accept the variables and single codes doesn't accept the variables.
   # that is the main reason we consider double codes ("") for example if i give
-a = 10
+a=10
 
 echo $a    # it print values as of a as 10.
 
