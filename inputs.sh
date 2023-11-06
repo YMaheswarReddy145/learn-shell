@@ -11,7 +11,7 @@ echo "* - $*" # it print all the inputs
 echo "# - $#" # it prints the no of inputs count
 
 
-sudo bash inputs.sh bac 123
+#sudo bash inputs.sh bac 123
 # Suppose if i give sudo bash inputs.sh bac 123
     #echo 0 - $0   # it prints the script name which input.sh
     #echo 1 - $1    # it gives the first input bac
