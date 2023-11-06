@@ -5,7 +5,9 @@ print_hello()
   echo Hello World
 }
 
-print_hello
+print_hello   # we are calling the function print_hello it will print the Hello World message in the output which is
+                # present is the function.
+
 
 # Function names (print_hello) should be using alphabets & numbers & _(underscore)
 # Simply using function name in script, We can call the function
