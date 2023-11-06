@@ -1,0 +1,13 @@
+# special input variable ranges from $0 -$n, *, #
+     # $0 - $n - Arguments.
+     # $* - for all values.
+     # $# - for no of argument.
+ # We declare the special characters in double codes.
+
+echo 0 - $0
+echo 1 - $1
+echo 2 - $2
+echo "* - $*"
+echo "# - $#"
+
+
