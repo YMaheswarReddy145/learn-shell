@@ -17,8 +17,4 @@ sudo bash inputs.sh bac 123
     #echo 1 - $1    # it gives the first input bac
     #echo 2 - $2    # it gives the second input 123
     #echo "* - $*"  # it gives bot the inputs bac 123
-    #echo "# - $#"  # it guves the count of the inputs as 2
-
-
-
-
+    #echo "# - $#"  # it gives the count of the inputs as 2
