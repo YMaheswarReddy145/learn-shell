@@ -13,7 +13,7 @@
 # While Loop example
 a=10
 while [ "$a" -gt 0 ]; do
-  echo A is greater than Zero
+  echo "$a" is greater than Zero
   a=$((a-1))      # We re adding this condition to over come the infinite loop, now it print 10 times
   sleep 1         # It will wait one second for every time it processed if you don't want you can remove it.
 done
