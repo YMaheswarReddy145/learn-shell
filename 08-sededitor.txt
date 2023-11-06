@@ -1,0 +1,105 @@
+Suppose we got an requirement asking to edit a file and update the configuration or something then we use sed editor
+
+Some of the operations we can do with  file is
+   1. Search & Replace Word
+   2. Delete the lines
+   3. Add your lines
+   4. Replace the lines
+
+Note: -i is used to updated in the file, if we don't give -i then the file is not update wht ever the changes you made
+       they just updated in the output only.
+
+These are the operations that we generally prefer to get in the command line editor so which we can edit the file directly
+  rather than opening in VI and go into insert mode and saving the file. we use the SED editor
+
+
+Assume we have a file with a data like this
+    root:x:0:0:root:/root:/bin/bash
+    bin:x:1:1:bin:/bin:/sbin/nologin
+    daemon:x:2:2:daemon:/sbin:/sbin/nologin
+    adm:x:3:4:adm:/var/adm:/sbin/nologin
+
+ 1. Search & Replace Word
+    To search and replace anything we use the below command
+    syntax : sed 's/search/replace/' <filename>
+
+    sed 's/nologin/yeslogin/' file
+     Here S --- substitute
+          / --- Boundary
+          In place of nologin we are replacing with yeslogin
+          file --- it is a filename
+
+   However after executing the above command if you check in the file(cat filename) then we can see the changes are not
+    modified because sed is only generating the output in the output only its not modifying the file.
+
+   Now to modify the changes in the file not only in the output we use -i
+       sed -i 's/nologin/yeslogin/' file
+
+   Assume we have a file with a data like this and you want to replace root with admin
+        root:x:0:0:root:/root:/bin/bash
+        bin:x:1:1:bin:/bin:/sbin/nologin
+        daemon:x:2:2:daemon:/sbin:/sbin/nologin
+        adm:x:3:4:adm:/var/adm:/sbin/nologin
+
+       sed 's/root/admin/' file
+   But the issue with the above command is if you have a root more then 1time in the first line, the sed will update only
+    the first root in the line and then it will go to the next line immediately, without searching and replacing the
+    rest of the root occurrences in 1st line. this is the behaviour of the SED editor.
+   So to stop this behaviour and replace all the occurrences of root with admin then simply we can go with global
+
+        sed 's/root/admin/g' file
+     Here g ---- stand for Global
+   Now with the help of the above command all the occurrences of root is updated to admin
+
+2. Delete The Lines
+    we can delete the lines in two ways
+    1. With line number
+        sed '2d' file
+     Here 2d ----> Delete the 2nd line
+        file ----> Name of the file
+
+    2. By searching the word and delete the lines
+         sed '/yeslogin/ d' file
+        Here we are deleting the lines which contain the yeslogin word.
+
+
+3. Adding  The Lines
+    we can add the lines in two ways
+    1. With line number
+        sed '2a Maheswar Reddy' file
+     Here 2a ----> Add the line after the 2nd line
+        file ----> Name of the file
+
+    2. By searching the word and adding the lines
+         sed '/yeslogin/ a Maheswar Reddy' file
+        Here we are adding the line after the yeslogin word.
+
+
+4. Replace or Change The Lines
+    we can replace the lines in two ways
+    1. With line number
+        sed '2c Maheswar Reddy' file
+     Here 2c ----> Replace the line 2 with Maheswar Reddy
+        file ----> Name of the file
+
+    2. By searching the word and replacing the lines
+         sed '/yeslogin/ c Maheswar Reddy' file
+        Here we are replacing the line with maheswr reddy which contain the yeslogin word.
+
+Suppose if you want to perform multiple  operation with a single sed command we use -e
+   sed -e '1d' -e '2a Maheswar Reddy' file
+
+  Now it will delete the 1st line and add a new line after the 2nd line
+
+
+
+
+
+
+
+2.
+
+
+
+
+
