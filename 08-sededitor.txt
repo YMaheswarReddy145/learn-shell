@@ -90,16 +90,3 @@ Suppose if you want to perform multiple  operation with a single sed command we 
    sed -e '1d' -e '2a Maheswar Reddy' file
 
   Now it will delete the 1st line and add a new line after the 2nd line
-
-
-
-
-
-
-
-2.
-
-
-
-
-
