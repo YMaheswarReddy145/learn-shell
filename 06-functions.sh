@@ -5,6 +5,8 @@ print_hello()
   echo Hello World
 }
 
+print_hello
+
 # Function names (print_hello) should be using alphabets & numbers & _(underscore)
 # Simply using function name in script, We can call the function
 # Functions can access variables of main program and vice-versa
