@@ -16,4 +16,17 @@ print_hello   # we are calling the function print_hello it will print the Hello 
 
 # The main usage of the function is when we have some repetetive commands then we can declare tht in the function and
    # we can use that function reference every where. Advantage is, if we change in place that inputs all the places where
-   # that commands fre used.
+   # that commands are used. for example purpose you cn check backend.sh file in expense-shell repo
+
+# There are some special variables ranges for inputs
+  #     # $1-$n - Arguments
+  #     # $* -for all values
+  #     # $# -for no of arguments
+
+sample()
+{
+  echo Function no of Arguments - $#
+  echo Function Input - $*
+}
+
+sample Maheswar Reddy
