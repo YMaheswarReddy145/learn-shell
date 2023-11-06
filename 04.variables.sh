@@ -39,6 +39,11 @@ echo -e "${color} $text Malleshwar Reddy \e[0m"
 echo -e "${color} $text Sai Vikas Reddy \e[0m"
 echo -e "${color} $text Subhash Reddy \e[0m"
 
+  # There re some special variables ranges for inputs, you can check inputs.sh file for more details regrading this
+     # $0-$n - Arguments
+     # $* -for all values
+     # $# -for no of arguments
+
 
 
 
