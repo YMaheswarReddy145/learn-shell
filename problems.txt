@@ -1,0 +1,38 @@
+The Problem of Shell Scripting
+   1. At scale shell is pain
+       That means when we are doing the things with much much bigger scripts and running them on the different operating
+        systems like many many machines, it is a bit difficult to manage.
+
+   2. Shell is imperative
+       That means we have to tell everything do these and do that i..e, in expense project we re asking to check the user
+         if user is present don't add and if it's not add the user. similar to the directory too.
+
+   3. Shell script is Homogenous
+       That means it can only work with single operating system, it means like you know you're writing the script probably
+         and you re running these particular script. But if you take the sme  script and try to execute in some other
+         operating systems like ubuntu its fails.
+
+ AS of now what we are doing is writing the shell script and logging in to that machine and cloning the git repository
+    and executing the script.
+   where s if we have many machines out there then how we deal with that is the major problem.
+
+ To solve the above problems configuration management tool will help
+
+ Configuration Management Tools
+  --> It help us in making the  OS level features with much more advanced way (like declarative way)
+      Tools that helps in making OS level changes with much more advanced features are tools consider under the
+       configuration management tools.
+          1. CFE Engine
+          2. Puppet
+          3. Chef
+          4. Ansible
+
+In today market it all about Ansible.
+
+How Ansible solve shell problems.
+    1. Ansible is declarative.
+    2. Ansible support heterogeneous by default
+    3. Ansible can scale to large infrastructure.
+
+
+
